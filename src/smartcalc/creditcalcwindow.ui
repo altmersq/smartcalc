@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>creditcalcWindow</class>
+ <widget class="QWidget" name="creditcalcWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>490</width>
+    <height>467</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(29, 38, 51);</string>
+  </property>
+  <widget class="QLabel" name="label_type">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>210</y>
+     <width>341</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(144, 183, 237);</string>
+   </property>
+   <property name="text">
+    <string>credit type:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_amount">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>90</y>
+     <width>341</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(144, 183, 237);</string>
+   </property>
+   <property name="text">
+    <string>  credit amount:</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboMonths">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>130</y>
+     <width>81</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(25, 119, 250);
+font: 500 11pt &quot;Ubuntu&quot;;
+color: rgb(25, 37, 59);</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>Months</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Years</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QComboBox" name="comboType">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>210</y>
+     <width>131</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(25, 119, 250);
+font: 500 11pt &quot;Ubuntu&quot;;
+color: rgb(25, 37, 59);</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>Annuity</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Differentiated</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLineEdit" name="inputInterest">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>170</y>
+     <width>131</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(62, 72, 87);
+color: rgb(216, 220, 234);</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="inputTerm">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>130</y>
+     <width>131</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(62, 72, 87);
+color: rgb(216, 220, 234);
+</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_interest">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>170</y>
+     <width>341</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(144, 183, 237);</string>
+   </property>
+   <property name="text">
+    <string>interest rate:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="inputAmount">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>90</y>
+     <width>131</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(62, 72, 87);
+color: rgb(216, 220, 234);</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_term">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>130</y>
+     <width>341</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(144, 183, 237);</string>
+   </property>
+   <property name="text">
+    <string>credit term:</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="button_calculateLoan">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>260</y>
+     <width>131</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(13, 69, 147);
+font: 500 11pt &quot;Ubuntu&quot;;
+color: rgb(25, 37, 59);
+</string>
+   </property>
+   <property name="text">
+    <string>calculate loan</string>
+   </property>
+  </widget>
+  <widget class="QTextBrowser" name="textBrowser">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>320</y>
+     <width>341</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(62, 72, 87);
+color: rgb(216, 220, 234);
+</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="button_goToCalc">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>51</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(13, 69, 147);
+image: url(:/new/prefix1/img/calc_icon.png);
+font: 500 11pt &quot;Ubuntu&quot;;
+color: rgb(25, 37, 59);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+   <property name="default">
+    <bool>false</bool>
+   </property>
+   <property name="flat">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="button_goToDeposit">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>10</y>
+     <width>51</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(13, 69, 147);
+image: url(:/new/prefix1/img/svinka.png);
+font: 500 11pt &quot;Ubuntu&quot;;
+color: rgb(25, 37, 59);
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>250</y>
+     <width>491</width>
+     <height>221</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(33, 40, 56);</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget_2" native="true">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>70</y>
+     <width>361</width>
+     <height>181</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(144, 183, 237);</string>
+   </property>
+  </widget>
+  <zorder>widget_2</zorder>
+  <zorder>label_interest</zorder>
+  <zorder>label_type</zorder>
+  <zorder>label_term</zorder>
+  <zorder>widget</zorder>
+  <zorder>label_amount</zorder>
+  <zorder>comboMonths</zorder>
+  <zorder>comboType</zorder>
+  <zorder>inputInterest</zorder>
+  <zorder>inputTerm</zorder>
+  <zorder>inputAmount</zorder>
+  <zorder>button_calculateLoan</zorder>
+  <zorder>textBrowser</zorder>
+  <zorder>button_goToDeposit</zorder>
+  <zorder>button_goToCalc</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
